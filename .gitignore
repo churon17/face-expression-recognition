@@ -1,0 +1,8 @@
+.env
+.vscode/
+.directory
+dist/
+
+ia-face-expression/.directory
+ia-face-expression/node_modules/
+ia-face-expression/.browserslistrc

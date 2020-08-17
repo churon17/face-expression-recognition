@@ -1,0 +1,48 @@
+<div style="display: flex; justify-content: center; margin-top: 5%;">
+    <div class="card text-white bg-dark mb-3" style="width: 26rem; margin-right: 6vw; float: left;">
+        <div class="card-header"><h5 class="card-title">Upload</h5></div>
+        <div class="card-body">
+          <p class="card-text">Upload some photo from your files ...</p>
+          <div class="container">
+            <input type="file" #file id="fileDropRef" accept="image/*" (change)="uploadFile(file.files)"/>
+            <img src="assets/img/ic-upload-file.svg" style="width: 40px; height: 40px; margin-bottom: 10px;">
+            <h4>Drag and drop file here</h4>
+            <h4>or</h4>
+            <label>Browse for file</label>
+          </div>
+        </div>
+    </div>
+    
+    <div class="card border-dark mb-3" style="width: 26rem;">
+        <div class="card-header"><h5 class="card-title">Webcam</h5></div>
+          
+          <div class="card-body text-dark">
+            <p class="card-text">Use your webcam to take some picture ...</p>
+            <button (click)='activateWebCam()' type="button" class="btn btn-danger" style="margin-bottom: 20px;">Activate Webcam</button>
+            <div *ngIf='isWebEnabled'>
+              <div #video id="webcam-container" style="text-align: center;"></div>
+            </div>
+          </div>
+    </div>
+</div>
+
+<div style="display: flex; justify-content: center; margin-top: 5%;">
+  <div class="jumbotron" style="width: 600px; text-align: center;" *ngIf='isFileUpload'>
+    <img style="border-style: solid; border-color: black;" [src]="imgURL" height="200" width="200" *ngIf="imgURL">
+    <div style="margin: 10px;">
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" [ngStyle]="{'width.%': probability}" aria-valuemin="0" aria-valuemax="100">
+          {{currentExpression.className}} : {{currentExpression.probability | percent}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="jumbotron" style="width: 600px; text-align: center;" *ngIf='isWebEnabled'>
+    <h4 class="h4" style="margin-bottom: 20px;">{{currentExpression.className}} : {{currentExpression.probability | percent}}</h4>
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" [ngStyle]="{'width.%': probability}" aria-valuemin="0" aria-valuemax="100">
+        {{currentExpression.className}} : {{currentExpression.probability | percent}}
+      </div>
+    </div>
+  </div>
+</div>

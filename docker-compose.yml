@@ -1,0 +1,22 @@
+version: "3.5"
+services:
+	face-recognition:
+		container_name: face-recognition
+		build:
+				context: ./ia-face-expression
+				dockerfile: Dockerfile.dev
+		volumes:
+				- .:/app
+				- /app/node_modules
+		ports:
+				- "4200:4200"
+		nginx-face-recognition:
+			depends_on:
+				- face-recognition
+			container_name: nginx
+			restart: always
+			build:
+				context: ./nginx
+				dockerfile: Dockerfile.dev
+			ports:
+				- "4000:80"
