@@ -12,12 +12,12 @@
           </div>
         </div>
     </div>
-    
+
     <div class="card border-dark mb-3" style="width: 26rem;">
         <div class="card-header"><h5 class="card-title">Webcam</h5></div>
-          
+
           <div class="card-body text-dark">
-            <p class="card-text">Use your webcam to take some picture ...</p>
+            <p class="card-text">Use your webcam to take some picture...</p>
             <button (click)='activateWebCam()' type="button" class="btn btn-danger" style="margin-bottom: 20px;">Activate Webcam</button>
             <div *ngIf='isWebEnabled'>
               <div #video id="webcam-container" style="text-align: center;"></div>
