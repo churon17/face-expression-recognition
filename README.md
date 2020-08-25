@@ -41,12 +41,13 @@ If you download the source code, please execute, inside **frontend** folder:
 npm install
 ```
 
-After that, execute: ```ng serve```, and that's all.
+After that, execute: ```ng serve```, and that's all, go to your browser and put the next url:  localhost:4200
 
 If you use Docker, in the main folder execute 
 ```
 docker-compose up --build
 ```
+After that, go to your browser and put the next url:  localhost:4000
 ## Students:
 
 - Jean Carlos Alarcón
