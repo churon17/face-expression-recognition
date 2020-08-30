@@ -31,6 +31,11 @@ In addition to this we have used [Google Colab](https://colab.research.google.co
 - [Notebook 1](https://colab.research.google.com/drive/1YUXIUC04UV6SBpngonuRCFYHeMV72Fg7?usp=sharing) - CNN for Face Expression Recognition with Images Dataset. 
 - [Notebook 2](https://colab.research.google.com/drive/1v03vF0raI1gGr10aDfJFR_t559gr7-3V?usp=sharing) - CNN for Face Expression Recognition with same Dataset on [CSV format](https://www.kaggle.com/shawon10/facial-expression-detection-cnn/?select=fer2013.csv). 
 
+Adittional Notebooks: 
+- [Hello World of Deep Learning with Neural Networks](https://colab.research.google.com/drive/1Bxv-ItuOsFCITuUXaynz9Ip5EF2SHSvu?usp=sharing)
+- [A basic Computer Vision Example](https://colab.research.google.com/drive/1Q42rYecYWRDQF1B22Hkq1tjbQwW5usn1?usp=sharing)
+- [Improve Computer Vision with CNN](https://colab.research.google.com/drive/1IF-VQ3OCjv0w3x_6efai4HmqlnTTX57_?usp=sharing)
+
 **NOTE:** For the use of this notebook, please generate your **kaggle.json** file  in your personal profile in [Kaggle](https://www.kaggle.com)
 
 ## Installation
